@@ -1,0 +1,63 @@
+/* псевдо-классы, псевдо-элементы */
+
+
+.input:focus{  /* осыган басканда озгереды */
+    outline: 3px solid red;
+}
+ 
+.input:active{  /* при удерживании */
+    background-color: aqua;
+    transition: 1s;  /* время анимации */
+}
+
+.input:hover{ /* при просто наводке */
+    opacity: 0.5;
+}
+
+li{
+    color: darkgreen;
+}
+/* специальное обращение именно к одному элементу из списка */
+li:not(:last-child){
+    color: aqua;
+}
+li:first-child{
+    color: red;
+}
+
+li:nth-child(2){
+    color:blue;
+}
+li:last-child{
+    color: black;
+}
+/* ---------------------------- */
+.el{
+    max-width: 100px;
+    background-color: aqua;
+}
+
+.el::first-line{
+    background-color: brown;
+}
+
+.el::first-letter{
+    color: white;
+}
+
+.input::placeholder{  /* text in input */
+    color: blue;
+}
+
+.el::selection{  /* выделение */
+    background-color: blueviolet;
+}
+
+
+.el::before{
+    content: "Zhaga Zhaga ";  /* must be always */
+}
+
+.el::after{
+    content: " Zhaga Zhaga";  /* must be always */
+}

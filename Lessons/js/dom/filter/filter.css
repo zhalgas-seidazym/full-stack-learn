@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body-content {
+    margin-top: 20px;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    gap: 30px;
+}
+
+.body-items{
+    width: calc(30%);
+}
+
+.img{
+    width: 100%;
+}
+
+.btn-item{
+    margin: 0 15px;
+}

@@ -1,0 +1,16 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container span:last-child{
+    font-weight: 1000;
+}
+
+#output {
+    font-weight: 700;
+}

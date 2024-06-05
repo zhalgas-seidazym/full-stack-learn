@@ -1,0 +1,43 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+    /* transform: translate(200px , 50px); */
+    
+    /* transform: scale(0.5); */
+
+    /* transform: scaleX(1.5);
+    transform: scaleY(0.5); */
+
+    /* transform: rotate(360deg); */
+
+    /* animation-name: anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s; */
+
+    animation: anim2 2s 2s infinite alternate;
+}
+
+@keyframes anim{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: yellow;
+    }
+}
+
+@keyframes anim2{
+    0%{
+        transform: translateX(0);
+        
+    }
+    100%{
+        /* transform: translateX(100%); */
+        /* transform: translateX(100vw); */
+        transform: translateX(calc(100vw - 100%));
+    }
+}
+

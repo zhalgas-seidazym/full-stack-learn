@@ -1,0 +1,44 @@
+/* Animation, transform, transition */
+
+.square{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+
+    /* transform: translate(x pos, y pos); меняет позицию объекта, также есть translateX(), translateY() */
+    /* transform: scale(0.5 coefficient); меняет размер элемента, также есть и scaleX(), scaleY() */
+    /* transform: rotate(30deg); осынша градуска буру, также есть rotateX - где х линия остается нетронутой, rotateY() - где у направление остается нетронутой */
+    
+    /* transition: transform 2s; транзишн для того чтобы давать время изменениям */
+    
+    /* animation-name: name_of_frame;
+    animation-duration: 3s; длина анимации
+    animation-delay: 2s; задержка анимации
+    animation-iteration-count: infinite; сколько раз должен виполнятся анимация
+    animation-direction: alternate; направление анимации, например в алтернате он ищет путь назад после того как с нуля дошeл
+    до конца, а алтернате-реверс начинает с конца и когда дойдет до начало то пойдет обратно, also have normal and reverse */
+    
+    animation: anim 3s 0s infinite alternate; /* animation: name duration delay count direction */
+}
+
+
+
+
+@keyframes name_of_frame{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: burlywood;
+    }
+}
+
+@keyframes anim{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        /* transform: translateX(100%); процентное соотношение здесь берет длину элемента */
+        transform: translateX(calc(100vw - 100%)); /* 100vw -здесь полное ширина экрана и элемент выходит с экрана так как доедет до конца, значит нужно calc() */
+    }
+}

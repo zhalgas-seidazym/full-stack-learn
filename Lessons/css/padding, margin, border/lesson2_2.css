@@ -1,0 +1,52 @@
+/* Свойство display, padding and margins, border */
+
+span, a{
+    display: block;
+}
+
+span{
+    padding: 30px 40px;
+    background-color: blue;
+}
+
+div, p{
+    display: inline-block;
+}
+
+p{
+    background-color: red;
+    margin: 0px 0px 0px 50px; /* расстояние между елементами */
+}
+
+.ex{
+    display: inline-block;
+    width: 300px;
+    border: 3px dashed green;
+    padding: 30px; /* расстояние между краями и елементом */
+    box-sizing: border-box; /* if we write box-sizing: border-box бордерды, падингты косканда узындыгы 300пикс болад 
+    default: content-box; расширяется */
+    border-radius: 15px; /* округление уголков, ар бурышына тоже марджиндар сиякты бере аламыз */
+}
+
+
+/* margins and paddings
+marigns and padding can not effect on inline elements
+Margin - расстояние между елементами
+Если напишем 4 пкс, то считается с верхней части по часовой стрелке, 
+если 3 то сверху по бокам и снизу, если 2 то сверху-снизу и по бокам, если 1 то во все стороны */
+
+/* Padding - расстояние между краями и елементом */
+
+/* Если хотим дать только одной стороне то нужно писать "-" and side: left, right, bottom, top после мрджина и паддинга */
+
+/* Border - границы
+border: width, style, color(default black)
+Каждыйын болек border-width, border-style, border-color деп ыстесе болады 
+border-style: solid - сплошная, dashed - пунктир, dotted - нуткелер 
+*/
+
+/* min-width, min-height, max-width, max-height
+min- height and max-heigth not reccomdended
+ */
+
+

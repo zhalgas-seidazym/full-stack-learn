@@ -1,0 +1,44 @@
+/* display flex, visibility, opacity, outline, cursor, object-fit, overflow */
+
+body{
+    background: #333;
+}
+
+.parent{
+    display: flex;    /* дисплей флех делает горизонтальную вертикальным */
+    flex-direction: row; /* default - row, also have row-reverse, column, column-reverse */
+    align-items: stretch;  /* выравнивание сайза вещей; default - stretch(барлык жагын туралайды), center, flex-end, flex-start;зависит от флекс дайрекшн */
+    justify-content: space-between; /* выравнивание расстояние вещей; flex-start, flex-end, center; 
+    space-between - екы шетындегы стенага жакын турады, ортасындагылардын расстояниесы бырдей болады
+    space-around - екы шетындегы ортасындагы расстоянын жартысы, ортасындагылар бырдей расстояниеде
+    space-evenly - барлык жагынан бырдей расстояние */
+    flex-wrap: wrap; /* сыймаса роуга астына тусыре береды wrap nowrap wrap-reverse */
+    /* gap: 15px; */
+
+}
+
+.child{
+    width: calc(33% - 30px);
+    padding: 5px;
+    margin: 0px 15px 15px 0px;
+    min-height: 150px;
+    background: turquoise;
+    cursor: grab; /* help - ?, wait - load, not-allowed, pointer-1 саусак, grab-5 саусак */
+}
+
+.invisible{
+    background-color: transparent; /* прозрачный */
+    visibility: hidden; /* видимость, скрытость */
+    opacity: 1; /*прозрачность */
+}
+
+.exp{
+    display: inline-block;
+    color: blue;
+    outline: 5px solid red; /* like block, бырак егер жалпак болса линиясы астындагы елементты кормиды и онын устыне шыга береды */
+}
+
+/* object-fit - тура бакгроундка сурет койган сиякты онын алатын орны, cover or contain 
+
+overflow - например текст хэйт койганда содан асып кетсе коямыз и ол hidden жазса корынбейтын болады сырттагысы,
+auto жазса скролл косылады */

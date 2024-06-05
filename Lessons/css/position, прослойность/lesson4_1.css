@@ -1,0 +1,55 @@
+/* Position, прослойность */
+
+/* relative and absolute position */
+
+.parent{
+    padding: 30px;
+    display: flex;
+    /* align-items: flex-start;
+    justify-content: flex-start; */
+    position: relative;
+}
+
+.child1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-right: 30px;
+    position: relative; /* relative pos деген относительно осы турган позицияга алынады */
+    top: 20px;  /* содан торты багытта жылжыта аламыз мысалы топтан 50 пикс ке, минус значение берсе де болады */
+    left: 200px;
+    /* z-index: -1; */
+}
+
+.child2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;  /* невидим для остальных елементов, релативы бар парент класстан есептеледы */
+    top: 0px;
+    left: 100px;
+}
+
+.fixed{
+    background-color: aqua;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    position: fixed; /* тоже невидим для других, стоит фиксированно на одном месте */
+    left: 0;
+    top: 200px;
+}
+
+.lorem{
+    margin-top: 100px;
+}
+
+.box{
+    width: 500px;
+    height: 200px;
+    background-color: red;
+    position: sticky; /* жабыскак,  топтан мысалы 300 пиксель жерге келгенде фиксед болып журеды */
+    top: 300px;
+    left: 0px;
+}

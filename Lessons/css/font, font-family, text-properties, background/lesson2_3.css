@@ -1,0 +1,47 @@
+/* font, font-family, text-properties, background */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+and copy name from google fonts */
+/* You can import also here */
+
+/* Or you can download it and like this use */
+@font-face {
+    font-family: "Dancing-bold";
+    src: url("../../extra/font-family/Dancing_Script/static/DancingScript-Bold.ttf");
+}
+
+font{
+    font-size: 50px;
+    font-style: italic; /* italic and normal */
+    font-weight: normal; /* bold - 700 and normal - 400 */
+
+    /* font-family: 'Dancing Script', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;     --------  copied from google fonts*/
+
+    font-family: Dancing-bold; /* this is imported from font-face */
+
+    /* default - Times New Roman */
+    /* font-family you can find from out - Google fonts */
+}
+
+.text{
+    font-size: 30px;
+    /* text-properties */
+    text-transform: uppercase; /* also lowercase, capitalize */
+    text-align: center; /* располодежение текста, also have left and right, works in block display */
+    text-decoration: underline; /* overline, line-through, none */
+    line-height: 80px; /* line-height - fonst-size = space between lines */
+    word-spacing: 20px;
+    letter-spacing: 5px;
+}
+
+
+body{
+    /* background-color: ; */
+    background-image: url("../../extra/image/Фон\ глаза.jpg"); /* puting images to background like this */
+    background-repeat: repeat; /* if img dont covers all page and its repeat and no-repeat */
+    background-size: cover; /* to cover all cover, else contain */
+    background-position: center; /* which part of image should be in background */
+    background-attachment: scroll; /* background img scrolls or one fixed img will in background */
+}
