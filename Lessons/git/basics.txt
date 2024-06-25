@@ -1,0 +1,21 @@
+git clone "src" will clone 
+git status will show changed files
+git add . prepares changes to commit
+git commit -m "comment" saves the commit in local repository
+git push origin main sends this commits into server
+
+
+create repository
+git init
+git branch -M main
+git remote add origin src
+
+create new vetka
+git branch "name" create
+git checkout -b "name" to change branch, if not exist create
+
+merge two vetkas
+git checkout main
+git pull origin main
+git merge vashavetka
+git push origin main

@@ -1,0 +1,13 @@
+:root{
+    --coc: red
+}
+
+.cont{
+    background-color: var(--coc);
+    color: blue;
+}
+
+.green{
+    background-color: var(--coc);
+    color: blue;
+}

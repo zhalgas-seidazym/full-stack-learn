@@ -1,0 +1,16 @@
+URI - uniform resource identifier, identifier that goes after domain
+
+Methods of working on resource
+- GET - get query
+- POST - to put new data
+- DELETE - to delete 
+- PUT - to update existing data 
+
+Statuses of answers
+- 200 - ok
+- 300 - redirected
+- 400 - page not found
+- 500 - unavailable
+
+Payload what we send
+Preview what we get

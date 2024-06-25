@@ -3,5 +3,7 @@
 
 $('.slider').slick({
     autoplay: true,
-    dots: true, 
+    dots: true,
+    slidesToShow: 2,
+    slidesToScroll: 1
 });

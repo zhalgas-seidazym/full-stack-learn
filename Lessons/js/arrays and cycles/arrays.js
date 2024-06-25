@@ -41,34 +41,23 @@ console.log('arr \n' + arr)
 
 /* arr = [... new Set(arr)]  удаляет повторяющиеся*/
 
+/* let arr2 = [...arr] copies array */
 
-// --------------------------------------------------------------
+/* map() to copy array
+let arr2 = arr.map((item, index) => {return item} )
+let arr2 = arr.map(item => item * 2 )    returns array lengths of original
+*/
 
-/* в cтринге индексы тоже начинаются с 0 */
-let str = 'Welcome to Almaty'
+/*  filter()
+let arr2 = arr.filter((item, index) => item > 0)
+let arr2 = arr.map(item => item > 0 )  return item which is true for if
+*/
 
-/* method split('') - разделяет по аргументу в массив */
-let mat = str.split(' ')
-/* method join('') - объеденяет массив с аргументом, default ',' */
-let str2 = arr.join('')
+/* every()
+let bool = arr.every((index, item) => item < 0) checks for every and returns true or false
+*/
 
-
-// ---------------------------------------------------------------
-let users = ['Zhalgas', 'Beka', 'Omar', 'China', 'Zhomart']
-
-// for in
-for(let i in users){
-    console.log(i) /* выводит индексы i до длины юсерс */
-    console.log(users[i])
-}
-
-// for of - its like for(type a: arr)
-for(let a of users){
-    console.log(a)
-}
-
-//foreach
-arr.forEach(element => {
-    
-});
+/* some()
+let bool = arr.some((index, item) => item < 0) checks for any and returns true or false
+*/
 

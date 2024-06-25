@@ -27,8 +27,10 @@ title[0].innerHTML = 'Changed'
 // unique.outerHTML = '<li>Outer</li>'
 
 //Style
+unique.style.setProperty('display', 'flex')
 unique.style.color = 'red'
 unique.style.backgroundColor = 'yellow'
+document.documentElement.style.setProperty('--display', 'grid') 
 
 //Class
 console.log(document.getElementsByTagName('h2')[0].classList)
@@ -57,4 +59,3 @@ function changeColor(arg) {
 }
 
 unique.classList.add('close')
-
